@@ -22,12 +22,16 @@ jobs:
         working-directory: ./client
         run: npm install
 
-      - name: Construir la app
+      - name: Verificar que vite esté instalado
         working-directory: ./client
-        run: npm run build
+        run: npx vite --version
+
+      - name: Construir la app con Vite
+        working-directory: ./client
+        run: npx vite build
 
       - name: Publicar en GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./client/dist  # ← o ./client/build, dependiendo de tu config de Vite o React
+          publish_dir: ./client/dist  # o ./client/build si no usas Vite
