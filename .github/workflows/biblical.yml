@@ -3,7 +3,7 @@ name: CI para rama biblical-quiz
 on:
   push:
     branches:
-      - Version1
+      - version1
 
 jobs:
   build-and-deploy:
