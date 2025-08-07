@@ -22,10 +22,6 @@ jobs:
         working-directory: ./client
         run: npm install
 
-      - name: Verificar que vite esté instalado
-        working-directory: ./client
-        run: npx vite --version
-
       - name: Construir la app con Vite
         working-directory: ./client
         run: npx vite build
