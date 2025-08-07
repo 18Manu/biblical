@@ -21,5 +21,5 @@ Aplicación web que presenta una encuesta de 10 preguntas y, según el puntaje t
 1. Clona el repositorio:
 
 ```bash
-git clone https://github.com/tu-usuario/biblical-quiz.git
+git clone https://github.com/18Manu/biblical
 cd biblical-quiz
